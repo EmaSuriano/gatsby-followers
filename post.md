@@ -59,16 +59,18 @@ Therefore for the example you have to create 4 flows in total, but just to keep 
 In order to create a new flow in Zapier, you have to click on the "Make a Zap" located in the top bar of the application. Here you will see the following interface, where they divide the creation process into two section:
 
 - Trigger: What need to happen
-- What will happened after
+- Action: What will happened after
 
-Also you can add more than one
+Let's start with the Trigger then:
 
-The rule will be something similar to, when someone follows that user, trigger a new deploy of the application.
+- Choose a Trigger App: search and select Twitter
+- Select Twitter Trigger: New follower of Me.
+- Choose Account: you might have to sign in and authorize Zapier to read some values from your account. After that, you are ready to start wathing new followers from your account.
+- Test This Step: You can trigger a new fake follower so you can check if everything is in order. You can skip this step if you want.
 
-The steps of creating that flow inside Zapier is:
+Now that we have our trigger, let's set up our deploy step!
 
-- Create a new card
-- Select Twitter as entry service
-- Search for the user we want
-- Choose the event of new follower
-- Select your
+- Chose an Action App: search and select Netlify (or your deployment service).
+- Choose Action: Pick Start a Deploy
+- Choose Account: Log in with Netlify in order to see and select which project you want to deploy.
+- Set up Template: Pick your site
